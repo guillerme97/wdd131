@@ -1,0 +1,166 @@
+.Quicksand-regular {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #3a80a8;
+}
+
+header {
+    background-color: #077e9c; 
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #05384d; 
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-blue {
+    background-color: #03025271;
+}
+
+.dark-blue:hover {
+    background-color: #03025271;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 1px auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10);
+}
+
+h2 {
+    color: white;
+    background-color: #0c737a; 
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile, .flag {
+    border-radius: 5%;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+figcaption {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about-me {
+    grid-column: 1 / 2;
+}
+
+.web-dev-resources {
+    grid-column: 2 / 3;
+    background-color: white; 
+}
+
+footer {
+    text-align: center;
+    background-color: #257c80; 
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer .modif {
+    color: #e2dbdb;
+}
+
+/* Media Query for responsive design */
+@media screen and (max-width: 768px) {
+    /* Stack the menu items vertically */
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the grid layout to be single column */
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me, .web-dev-resources {
+        grid-column: 1;
+    }
+}
+
+.menu a:hover {
+    background-color: #69a31c; 
+}
